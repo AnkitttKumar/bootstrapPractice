@@ -1,0 +1,209 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .jumbotron {
+        background-image: url(data:image/jpeg;base64,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);
+        text-align: center;
+        margin-top: 50px;
+        color: azure;
+      }
+      #content {
+        text-align: center;
+      }
+      .card-deck {
+        margin-left: 100px;
+        padding-top: 20px;
+      }
+      #appstore {
+        width: 200px;
+      }
+      #footer {
+        background-color: aqua;
+        padding-top: 30px;
+        text-align: center;
+        margin-top: 50px;
+        padding-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="150">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My App</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#jumbotron"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Download</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="email"
+              placeholder="Email"
+              aria-label="email"
+            />
+            <input
+              class="form-control me-2"
+              type="password"
+              placeholder="password"
+              aria-label="password"
+            />
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- this is jumbotron -->
+
+    <div class="jumbotron" id="jumbotron">
+      <h1 class="display-4">My Awesome App</h1>
+
+      <p class="lead">
+        This is a simple hero unit, a simple jumbotron-style component for
+        calling extra attention to featured content or information.
+      </p>
+      <hr class="my-4" />
+      <p>
+        It uses utility classes for typography and spacing to space content out
+        within the larger container.
+      </p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p>
+    </div>
+    <!-- jumbotron ends here -->
+
+    <!-- this is app content -->
+    <div class="container" id="content">
+      <h1>Why this app is Awesome</h1>
+      <p>This app is awesome to use</p>
+    </div>
+
+    <!-- this is card starts -->
+
+    <div class="card-deck container" id="about">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="https://www.w3schools.com/bootstrap4/img_avatar3.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="https://www.w3schools.com/bootstrap4/img_avatar3.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This card has supporting text below as a natural lead-in to
+            additional content.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="https://www.w3schools.com/bootstrap4/img_avatar3.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This card has even longer content than the
+            first to show that equal height action.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="" id="footer">
+      <h3>Download the app</h3>
+      <p>Really, why should I download this app?</p>
+      <p>
+        <a href="#"
+          ><img
+            id="appstore"
+            src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/12/23/apple-app-store-logo-1174433-1671801649.jpg?itok=x6OsEJaN"
+            alt=""
+        /></a>
+      </p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
